@@ -1,0 +1,105 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+.hero {
+    background-color: var(--bs-gray-900);
+    color: #fff !important;
+
+
+    .jumbotron {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+
+
+    }
+
+    .logo {
+        height: 2rem;
+    }
+
+    .hero-images {
+        position: relative;
+        width: 10px;
+        transform: translate(-100px, 0px);
+
+        img {
+            position: absolute;
+        }
+
+        img:nth-child(2) {
+            z-index: 99;
+            transform: translate(0px, -60px);
+        }
+
+        img:first-child {
+            transform: rotate(-25deg) translate(-100px, -90px);
+            z-index: 9;
+        }
+
+        img:last-child {
+            transform: rotate(25deg) translate(100px, -90px);
+            z-index: 9;
+        }
+    }
+
+
+}
+
+
+section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.buy-now {
+    width: 100%;
+    background-color: #f36f25;
+    font-weight: bold;
+    color: white;
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px 50px;
+}
+
+.book {
+    width: 250px;
+
+    .title {
+        font-weight: bold;
+    }
+
+    .authors {
+        font-size: 0.75rem;
+    }
+
+    .year {
+        font-size: 0.75rem;
+    }
+}
+
+.mr-2 {
+    margin-right: 12px;
+}
+
+.pricing {
+    display: flex;
+
+    .print,
+    .ebook {
+        margin-right: 10px;
+        margin-top: 10px;
+        border: 2px solid #f36f25;
+        padding: 4px 6px;
+        cursor: pointer;
+    }
+}

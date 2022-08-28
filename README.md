@@ -1,8 +1,6 @@
-# Foobar
-
-Foobar is a Python library for dealing with word pluralization.
-
 ## Installation
+Put api token from packt in .env with `PACKT_API_TOKEN` as key refere `.env.example`
+
 from root of the project run
 ```bash
 composer install
