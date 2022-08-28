@@ -1,5 +1,5 @@
 ## Installation
-Put api token from packt in .env with `PACKT_API_TOKEN` as key refere `.env.example`
+Put api token from packt in .env with `PACKT_API_TOKEN` as key pls refer `.env.example` if needed
 
 from root of the project run
 ```bash
